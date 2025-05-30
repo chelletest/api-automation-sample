@@ -28,3 +28,5 @@ This is a basic API automation sample using Postman and Newman to test the **JSO
 - **API Test Collection**: `api-tests.postman_collection.json`
 
 ---
+<img width="818" alt="Terminal" src="https://github.com/user-attachments/assets/bc66fcc1-e45c-4035-82f3-b095262376d4" />
+
