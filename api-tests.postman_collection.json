@@ -1,0 +1,66 @@
+{
+	"info": {
+		"_postman_id": "0f44fb5f-cc1e-4f9c-9c13-8949ca7724b9",
+		"name": "API Automation Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45488739",
+		"_collection_link": "https://tb-5216946.postman.co/workspace/tb's-Workspace~30bcc448-da1a-411c-8586-57a282182264/collection/45488739-0f44fb5f-cc1e-4f9c-9c13-8949ca7724b9?action=share&source=collection_link&creator=45488739"
+	},
+	"item": [
+		{
+			"name": "API Test1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/1\n",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"1\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API Test2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Check if status code is 200",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://httpbin.org/get",
+					"protocol": "https",
+					"host": [
+						"httpbin",
+						"org"
+					],
+					"path": [
+						"get"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
